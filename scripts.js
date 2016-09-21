@@ -29,7 +29,8 @@ flair.updateFilter = function(text) {
         if (flair.names.hasOwnProperty(key)) {
             var key_name = flair.names[key].toLowerCase();
             var el = document.querySelector('.flair-choice[data-id="'+key+'"]');
-            
+            if (el == null)
+                continue;
             if (text == key_name || key_name.indexOf(text) !== -1 || text === key) {
                 n.show(el);
             } else {
