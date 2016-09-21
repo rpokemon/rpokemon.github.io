@@ -40,6 +40,10 @@ flair.updateFilter = function(text) {
 }
 
 flair.sendChoice = function() {
+    if (flair.current_choice === 0) {
+        alert('Choose a flair first!');
+        return;
+    }
 	var flair_text = encodeURIComponent(document.getElementById('flair-selection-text').value);
 	window.open("http://www.reddit.com/message/compose/?to=PokemonFlairBot&subject="+flair.current_choice+"&message="+flair_text)
 }
