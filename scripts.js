@@ -70,6 +70,8 @@ flair.loadChoices = function() {
     var enter = document.getElementById('flair-choices');
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
+            if (key == 0 || key == '0') continue;
+            
             var flair_choice = document.createElement('span');
             flair_choice.setAttribute('class', 'flair flair-choice flair-' + key);
             flair_choice.setAttribute('data-name', flair.names[key]);
