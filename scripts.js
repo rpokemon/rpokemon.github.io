@@ -44,8 +44,8 @@ flair.sendChoice = function() {
         alert('Choose a flair first!');
         return;
     }
-	var flair_text = encodeURIComponent(document.getElementById('flair-selection-text').value);
-	window.open("http://www.reddit.com/message/compose/?to=PokemonFlairBot&subject="+flair.current_choice+"&message="+flair_text)
+    var flair_text = encodeURIComponent(document.getElementById('flair-selection-text').value);
+    window.open("http://www.reddit.com/message/compose/?to=PokemonFlairBot&subject="+flair.current_choice+"&message="+flair_text)
 }
 
 flair.selectChoice = function(key) {

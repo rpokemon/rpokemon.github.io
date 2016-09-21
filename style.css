@@ -8,7 +8,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    padding-bottom: 20px;
+    padding: 0 10px 20px 10px;
 }
 
 .fl { float: left; }
@@ -28,6 +28,7 @@ body {
 	position: relative;
     margin: 0 auto;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .spacer {
