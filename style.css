@@ -8,6 +8,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    padding-bottom: 20px;
 }
 
 .fl { float: left; }
