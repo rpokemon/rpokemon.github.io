@@ -1,5 +1,7 @@
 flair.current_choice = 0;
 
+flair.subreddits = ['Pokemon', 'Stunfisk', 'TruePokemon'];
+
 flair.searchByName = function(needle) {
     var matches = [];
     for (var key in flair.names) {
@@ -45,8 +47,26 @@ flair.sendChoice = function() {
         alert('Choose a flair first!');
         return;
     }
+    
     var flair_text = encodeURIComponent(document.getElementById('flair-selection-text').value);
-    window.open("http://www.reddit.com/message/compose/?to=PokemonFlairBot&subject="+flair.current_choice+"&message="+flair_text)
+    var subreddits = '';
+    
+    if (flair_text.length == 0) {
+        flair_text = '%0A';
+    }
+    
+    var o = document.querySelectorAll('.sr-choice ');
+    for (var i = 0, len = o.length; i < len; i++) {
+        var sr_name = o[i].getAttribute('data-name');
+        if (o[i].querySelector('input[type=checkbox').checked) {
+            subreddits += sr_name + ' ';
+        }
+    }
+    
+    window.open('http://www.reddit.com/message/compose/?to=PokemonFlairBot&subject='+
+        flair.current_choice+
+        '&message='+flair_text+'%0A'+
+        subreddits)
 }
 
 flair.selectChoice = function(key) {
@@ -81,6 +101,36 @@ flair.loadChoices = function() {
             flair_choice.setAttribute('onclick', 'flair.selectChoice("'+key+'")');
             
             enter.appendChild(flair_choice);
+        }
+    }
+    
+    var sr_enter = document.getElementById('subreddit-selection');
+    for (var i = 0; i < flair.subreddits.length; i++) {
+        var sr = flair.subreddits[i];
+        
+        var sr_choice = document.createElement('label');
+        sr_choice.setAttribute('class', 'sr-choice');
+        sr_choice.setAttribute('data-name', sr);
+        sr_choice.setAttribute('for', 'sr-choice-'+sr);
+        
+        var sr_choice_input = document.createElement('input');
+        sr_choice_input.setAttribute('id', 'sr-choice'+sr);
+        sr_choice_input.setAttribute('type', 'checkbox');
+        sr_choice_input.setAttribute('checked', '');
+        
+        var sr_choice_span = document.createElement('span');
+        sr_choice_span.textContent = sr;
+        
+        sr_choice.appendChild(sr_choice_input);
+        sr_choice.appendChild(sr_choice_span);
+        
+        sr_enter.appendChild(sr_choice);
+        
+        if (i != flair.subreddits.length-1) {
+            var sr_sep = document.createElement('span');
+            sr_sep.setAttribute('class', 'sr-sep');
+            sr_sep.textContent = '|';
+            sr_enter.appendChild(sr_sep);
         }
     }
 }

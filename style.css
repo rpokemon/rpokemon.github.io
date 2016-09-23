@@ -50,6 +50,25 @@ select, input[type=text], input[type=number] {
     justify-content: center;
 }
 
+label {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+label input[type=checkbox] + span {
+    margin-left: 5px;
+}
+
+#subreddit-selection .sr-sep {
+    display: inline-block;
+    margin: 0 10px;
+    color: rgba(0,0,0,0.2);
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+}
+
 #flair-filter-text {
     min-width: 180px;
     margin-bottom: 10px;
