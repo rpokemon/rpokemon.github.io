@@ -114,7 +114,7 @@ flair.loadChoices = function() {
         sr_choice.setAttribute('for', 'sr-choice-'+sr);
         
         var sr_choice_input = document.createElement('input');
-        sr_choice_input.setAttribute('id', 'sr-choice'+sr);
+        sr_choice_input.setAttribute('id', 'sr-choice-'+sr);
         sr_choice_input.setAttribute('type', 'checkbox');
         sr_choice_input.setAttribute('checked', '');
         
