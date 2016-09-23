@@ -865,9 +865,9 @@ flair.names = {
     "rb10": "Old School Omanyte",
     "rockruff": "Rockruff",
     "salandit": "Salandit",
-    "tapukoko": "Mudsdale",
-    "togedemaru": "Rockruff",
+    "tapukoko": "Tapukoko",
+    "togedemaru": "Togedemaru",
     "vikavolt": "Vikavolt",
-    "wimpod": "Bounsweet",
+    "wimpod": "Wimpod",
     "yungoos": "Yungoos - Political Flair Text Is A Ban"
 };
