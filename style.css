@@ -60,6 +60,10 @@ label input[type=checkbox] + span {
     margin-left: 5px;
 }
 
+#subreddit-selection {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
 #subreddit-selection .sr-sep {
     display: inline-block;
     margin: 0 10px;
