@@ -66,7 +66,6 @@ flair.loadExtra = function() {
 }
 
 flair.names = {
-    "0": "Missingno",
     "1": "Bulbasaur",
     "2": "Ivysaur",
     "3": "Venusaur",
@@ -869,5 +868,6 @@ flair.names = {
     "togedemaru": "Togedemaru",
     "vikavolt": "Vikavolt",
     "wimpod": "Wimpod",
-    "yungoos": "Yungoos - Political Flair Text Is A Ban"
+    "yungoos": "Yungoos - Political Flair Text Is A Ban",
+    "missingno": "Missingno"
 };
