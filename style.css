@@ -18,14 +18,14 @@ body {
 .clearfix, .cf {zoom:1;}
 
 .wrapper {
-	width: 100%;
-	max-width: 792px;
-	padding: 10px;
-	border-radius: 5px;
-	background: #ecf0f1;
-	box-shadow: 0 0 0 1px #999, inset 0 0 0 1px #FFF;
-	display: block;
-	position: relative;
+    width: 100%;
+    max-width: 792px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ecf0f1;
+    box-shadow: 0 0 0 1px #999, inset 0 0 0 1px #FFF;
+    display: block;
+    position: relative;
     margin: 0 auto;
     margin-top: 20px;
     box-sizing: border-box;
@@ -116,11 +116,10 @@ button:active, input[type=submit]:active {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    
-	width: 40px;
-	height: 32px;
-	cursor: pointer;
-	margin: 6px 2px;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+    margin: 6px 2px;
     position: relative;
 }
 .flair:not([class*='flair-']) {
@@ -132,8 +131,8 @@ button:active, input[type=submit]:active {
 }
 
 .flair:hover, .flair.selected {
-	background-color: #3498db;
-	border-radius: 2px;
+    background-color: #3498db;
+    border-radius: 2px;
 }
 
 /* flair icons */
