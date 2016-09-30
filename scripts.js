@@ -1,6 +1,6 @@
 flair.current_choice = 0;
 
-flair.subreddits = ['Pokemon', 'Stunfisk', 'TruePokemon'];
+flair.subreddits = ['Pokemon', 'Stunfisk', 'TruePokemon', 'Dugtrio'];
 
 flair.searchByName = function(needle) {
     var matches = [];
