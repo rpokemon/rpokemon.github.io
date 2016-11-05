@@ -1,24 +1,20 @@
 flair.current_choice = 0;
+flair.sheet_filter = null;
 
 flair.subreddits = ['Pokemon', 'Stunfisk', 'TruePokemon', 'Dugtrio'];
 
-flair.searchByName = function(needle) {
-    var matches = [];
-    for (var key in flair.names) {
-        if (flair.names.hasOwnProperty(key)) {
-            var key_name = flair.names[key];
-            if (key_name.toLowerCase().indexOf(needle) !== -1) {
-                matches.push([key, key_name]);
-            }
-        }
+flair.updateRegionFilter = function(sheet_name) {
+    if (sheet_name == 'ALL') {
+        flair.sheet_filter = null;
+    } else {
+        flair.sheet_filter = sheet_name;
     }
-    return matches;
+    
+    flair.updateFilter();
 }
 
 flair.updateFilter = function(text) {
-    if (text.length == 0) {
-        n.show(document.querySelectorAll('.flair-choice'));
-    }
+    text = text || document.getElementById('flair-filter-text').value;
     
     var is_int = text >>> 0 === parseFloat(text);
     if (is_int) {
@@ -27,13 +23,23 @@ flair.updateFilter = function(text) {
     
     text = text.toLowerCase();
     
-    for (var key in flair.names) {
-        if (flair.names.hasOwnProperty(key)) {
-            var key_name = flair.names[key].toLowerCase();
-            var el = document.querySelector('.flair-choice[data-id="'+key+'"]');
+    for (var poke_id in flair.by_id) {
+        if (flair.by_id.hasOwnProperty(poke_id)) {
+            var poke_name = flair.by_id[poke_id].poke_name.toLowerCase();
+            var sheet = flair.by_id[poke_id].sheet;
+            
+            var el = document.querySelector('.flair-choice[data-id="'+poke_id+'"]');
             if (el == null)
                 continue;
-            if (text == key_name || key_name.indexOf(text) !== -1 || text === key) {
+            
+            if (
+                    // check poke_name
+                    (text.length == 0 || text == poke_name || (poke_name.indexOf(text) !== -1 && isNaN(text)) ||
+                    // check poke_id
+                    text === poke_id || text === flair.by_id[poke_id].orig_id) &&
+                    // check sheet
+                    (flair.sheet_filter === null || flair.sheet_filter === sheet)
+                ) {
                 n.show(el);
             } else {
                 n.hide(el);
@@ -69,8 +75,8 @@ flair.sendChoice = function() {
         subreddits)
 }
 
-flair.selectChoice = function(key) {
-    var el = document.querySelector('.flair-choice[data-id="'+key+'"]');
+flair.selectChoice = function(poke_id, key) {
+    var el = document.querySelector('.flair-choice[data-id="'+poke_id+'"]');
     
     if (!el) {
         return;
@@ -81,24 +87,25 @@ flair.selectChoice = function(key) {
     
     flair.current_choice = key;
     
-    document.getElementById('flair-selection-flair').setAttribute('class', 'flair flair-'+key);
-    document.getElementById('flair-selection-name').innerHTML = '#'+key + ' ' + flair.names[key];
+    document.getElementById('flair-selection-flair').setAttribute('class', 'flair '+ flair.by_id[poke_id].flair_class);
+    document.getElementById('flair-selection-name').innerHTML = '#'+poke_id + ' ' + flair.by_id[poke_id].poke_name;
 }
 
 flair.loadChoices = function() {
     flair.loadExtra();
+    flair.load__by_id();
     
     var enter = document.getElementById('flair-choices');
-    for (var key in flair.names) {
-        if (flair.names.hasOwnProperty(key)) {
-            if (key == 0 || key == '0') continue;
+    for (var poke_id in flair.by_id) {
+        if (flair.by_id.hasOwnProperty(poke_id)) {
+            var data = flair.by_id[poke_id];
             
             var flair_choice = document.createElement('span');
-            flair_choice.setAttribute('class', 'flair flair-choice flair-' + key);
-            flair_choice.setAttribute('data-name', flair.names[key]);
-            flair_choice.setAttribute('title', '#'+key+' '+flair.names[key]);
-            flair_choice.setAttribute('data-id', key);
-            flair_choice.setAttribute('onclick', 'flair.selectChoice("'+key+'")');
+            flair_choice.setAttribute('class', 'flair flair-choice ' + data.flair_class);
+            flair_choice.setAttribute('data-name', data.poke_name);
+            flair_choice.setAttribute('title', '#'+data.poke_id + ' ' + data.poke_name);
+            flair_choice.setAttribute('data-id', data.poke_id);
+            flair_choice.setAttribute('onclick', 'flair.selectChoice("'+data.poke_id+'","'+data.key+'")');
             
             enter.appendChild(flair_choice);
         }
