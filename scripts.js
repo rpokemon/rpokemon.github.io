@@ -92,7 +92,6 @@ flair.selectChoice = function(poke_id, key) {
 }
 
 flair.loadChoices = function() {
-    flair.loadExtra();
     flair.load__by_id();
     
     var enter = document.getElementById('flair-choices');
