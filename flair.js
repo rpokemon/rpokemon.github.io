@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-12T06:45:04-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-12T08:06:48-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -817,8 +817,6 @@ flair.names = {
     "2-1 alolaflair 789": "Cosmog",
     "2-3 alolaflair 791": "Solgaleo",
     "2-4 alolaflair 792": "Lunala",
-    "2-5 alolaflair 793": "Magearna",
-    "2-6 alolaflair 794": "Marshadow",
 /* [ETC/FORMS] */
     "0-1 formsflair 130s": "Shiny Gyarados",
     "0-2 formsflair 386a": "Deoxys Attack",
@@ -927,13 +925,9 @@ flair.names = {
     "4-4 formsflair a28": "Alolan Sandslash",
     "4-5 formsflair a37": "Alolan Vulpix",
     "4-6 formsflair a38": "Alolan Ninetales",
-    "4-7 formsflair a50": "Alolan Diglett",
     "4-8 formsflair a51": "Alolan Dugtrio",
     "4-9 formsflair a52": "Alolan Meowth",
     "4-10 formsflair a53": "Alolan Persian",
-    "4-11 formsflair a74": "Alolan Geodude",
-    "4-12 formsflair a75": "Alolan Graveler",
-    "4-13 formsflair a76": "Alolan Golem",
     "4-14 formsflair a88": "Alolan Grimer",
     "4-15 formsflair a89": "Alolan Muk",
     "4-16 formsflair a103": "Alolan Exeggutor",
