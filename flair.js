@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-12T08:50:03-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-12T21:09:47-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -822,9 +822,10 @@ flair.names = {
     "0-2 formsflair 386a": "Deoxys Attack",
     "0-3 formsflair 386d": "Deoxys Defense",
     "0-4 formsflair 386s": "Deoxys Speed",
-    "0-5 formsflair 421o": "Sunshine Cherrim",
-    "0-6 formsflair 351a": "Snowy Castform",
-    "0-7 formsflair 351b": "Sunny Castform",
+    "0-5 formsflair 351a": "Snowy Castform",
+    "0-6 formsflair 351b": "Sunny Castform",
+    "0-7 formsflair 351c": "Rainy Castform",
+    "0-8 formsflair 421o": "Sunshine Cherrim",
     "0-9 formsflair 422o": "East Sea Shellos",
     "0-10 formsflair 423o": "East Sea Gastrodon",
     "0-12 formsflair 479a": "Rotom-Frost",
