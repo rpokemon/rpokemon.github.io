@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-12T21:09:47-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-12T21:33:03-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -19,6 +19,10 @@ flair.load__by_id = function() {
                 orig_id = orig_id.substring(0, orig_id.length - 1);
             }
             if (orig_id.substring(orig_id.length - 'y'.length) === 'y') {
+                orig_id = orig_id.substring(0, orig_id.length - 1);
+            }
+            if (orig_id.substring(orig_id.length - 1).match(/[a-z]/i) &&
+                orig_id.substring(0, orig_id.length - 1).match(/^\d+$/)) {
                 orig_id = orig_id.substring(0, orig_id.length - 1);
             }
             
