@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-12T21:33:03-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-14T05:47:08-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -990,8 +990,8 @@ flair.names = {
     "1-4 megasflair 376m": "Mega Metagross",
     "1-5 megasflair 380m": "Mega Latias",
     "1-6 megasflair 381m": "Mega Latios",
-    "1-7 megasflair 382m": "Mega Kyogre",
-    "1-8 megasflair 383m": "Mega Groudon",
+    "1-7 megasflair 382m": "Primal Kyogre",
+    "1-8 megasflair 383m": "Primal Groudon",
     "1-9 megasflair 384m": "Mega Rayquaza",
     "1-10 megasflair 428m": "Mega Lopunny",
     "1-11 megasflair 445m": "Mega Garchomp",
