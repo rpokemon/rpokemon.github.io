@@ -16,19 +16,29 @@ body {
 .clearfix:before,.clearfix:after, .cf:before, .cf:after {content:"";display:table;}
 .clearfix:after, .cf:after {clear:both;}
 .clearfix, .cf {zoom:1;}
+.hide { display: none !important; }
 
 .wrapper {
     width: 100%;
     max-width: 792px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #ecf0f1;
-    box-shadow: 0 0 0 1px #999, inset 0 0 0 1px #FFF;
     display: block;
     position: relative;
     margin: 0 auto;
     margin-top: 20px;
     box-sizing: border-box;
+}
+
+.wrapper:not(.no-style) {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #999, inset 0 0 0 1px #FFF;
+    background: #ecf0f1;
+}
+.wrapper.no-margin {
+    margin-top: 0;
+}
+.wrapper.no-pad, .wrapper.no-pad:not(.no-style) {
+    padding: 0;
 }
 
 .spacer {
@@ -94,6 +104,29 @@ label input[type=checkbox] + span {
     font-size: 13px;
     margin-right: 5px;
     color: rgba(0,0,0,0.5);
+}
+
+
+#help-link {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+#help-link:hover {
+    text-decoration: underline;
+}
+
+#help-bubble.hide + .wrapper {
+    margin-top: 0;
+}
+
+#help-bubble {
+    font-size: 13px;
+}
+
+#help-bubble p {
+    margin: 0.5em 0;
 }
 
 /* BUTTON

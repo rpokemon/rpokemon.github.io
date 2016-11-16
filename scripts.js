@@ -1,5 +1,7 @@
 flair.current_choice = 0;
 flair.sheet_filter = null;
+flair.sheet_filter_change = false;
+flair.typing_timeout = null;
 
 flair.subreddits = ['Pokemon', 'Stunfisk', 'TruePokemon', 'Dugtrio'];
 
@@ -10,6 +12,7 @@ flair.updateRegionFilter = function(sheet_name) {
         flair.sheet_filter = sheet_name;
     }
     
+    flair.sheet_filter_change = true;
     flair.updateFilter();
 }
 
@@ -46,6 +49,38 @@ flair.updateFilter = function(text) {
             }
         }
     }
+    
+    var fn_hashUpdate = function() {
+        var hash = "#";
+        
+        if (text.length != 0) {
+            hash += "q=" + encodeURIComponent(text);
+        }
+        
+        if (flair.sheet_filter != null) {
+            if (hash.length != 1) {
+                hash += "&";
+            }
+            
+            hash += "r=" + encodeURIComponent(flair.sheet_filter);
+        }
+        
+        history.replaceState(undefined, undefined, hash);
+    };
+    
+    // sheet filter change should be an immediate hash change
+    // for the text filter, we should wait for the user to be done typing
+    if (flair.sheet_filter_change) {
+        flair.sheet_filter_change = false;
+        fn_hashUpdate();
+    } else {
+        if (flair.typing_timeout) {
+            clearTimeout(flair.typing_timeout);
+        }
+        
+        flair.typing_timeout = setTimeout(fn_hashUpdate, 600);
+    }
+    
 }
 
 flair.sendChoice = function() {
@@ -94,6 +129,40 @@ flair.selectChoice = function(poke_id, key) {
 flair.loadChoices = function() {
     flair.load__by_id();
     
+    var do_initial_updateFilter = false;
+    
+    if(window.location.hash) {
+        var hash = window.location.hash.substring(1);
+        
+        if (hash == 'flair') {
+            history.replaceState(undefined, undefined, "#");
+        }
+        
+        var q = n.getParameterByName('q', "?"+hash);
+        var r = n.getParameterByName('r', "?"+hash);
+        
+        if (q) {
+            document.getElementById('flair-filter-text').value = q;
+        }
+        if (r) {
+            var isAvailable = false;
+            for (var i = 0; i < document.getElementById("flair-filter-sheet").length; i++){
+                if (document.getElementById("flair-filter-sheet").options[i].value == r){
+                    isAvailable = true;
+                }
+            }
+            
+            if (isAvailable) {
+                document.getElementById('flair-filter-sheet').value = r;
+                flair.sheet_filter = r;
+            }
+        }
+        
+        if (q || r) {
+            do_initial_updateFilter = true;
+        }
+    }
+    
     var enter = document.getElementById('flair-choices');
     for (var poke_id in flair.by_id) {
         if (flair.by_id.hasOwnProperty(poke_id)) {
@@ -139,6 +208,10 @@ flair.loadChoices = function() {
             sr_enter.appendChild(sr_sep);
         }
     }
+    
+    if (do_initial_updateFilter) {
+        flair.updateFilter();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', flair.loadChoices, false);
@@ -146,6 +219,11 @@ document.addEventListener('DOMContentLoaded', flair.loadChoices, false);
 /* UTILITIES
 --------------------------------------------------------------------------------*/
 var n = {};
+
+n.getParameterByName = function(name, url) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(url);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
 
 n.addClass = function(o, className) {
     if (!o || !className || !className.length)
