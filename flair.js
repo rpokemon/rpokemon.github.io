@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-14T05:47:08-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-15T22:04:35-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -947,8 +947,8 @@ flair.names = {
     "5-7 formsflair rb8": "Old School Tauros",
     "5-8 formsflair rb9": "Old School Electrode",
     "5-9 formsflair rb10": "Old School Omanyte",
-    "5-10 formsflair instinct": "Team Instinct",
-    "5-11 formsflair mystic": "Team Mystic",
+    "5-10 formsflair mystic": "Team Mystic",
+    "5-11 formsflair instinct": "Team Instinct",
     "5-12 formsflair valor": "Team Valor",
     "0-0 megasflair 3m": "Mega Venusaur",
     "0-1 megasflair 6xm": "Mega Charizard X",
