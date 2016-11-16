@@ -106,7 +106,18 @@ label input[type=checkbox] + span {
     color: rgba(0,0,0,0.5);
 }
 
+@media (max-width: 600px) {
+    #flair-filter {
+        flex-direction: column;
+    }
+    
+    #flair-filter label[for=flair-filter-sheet] {
+        margin-top: 4px;
+    }
+}
 
+/* HELP STUFF
+--------------------------------------------------------------------------------*/
 #help-link {
     display: inline-block;
     font-size: 12px;
