@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-15T22:04:35-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-21T21:38:34-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -1000,6 +1000,9 @@ flair.names = {
     "1-14 megasflair 475m": "Mega Gallade",
     "1-15 megasflair 531m": "Mega Audino",
     "1-16 megasflair 719m": "Mega Diancie",
+    "1-17 megasflair ub1": "UB-01",
+    "1-18 megasflair ub2s": "UB-02 Absorption",
+    "1-19 megasflair ub2m": "UB-02 Beauty",
     "0-0 badgesflair badge1": "Brock Badge",
     "0-1 badgesflair badge2": "Misty Badge",
     "0-2 badgesflair badge3": "Lt. Surge Badge",
