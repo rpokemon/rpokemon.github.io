@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-27T17:08:48-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-27T23:52:13-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -1014,9 +1014,14 @@ flair.names = {
     "1-14 megasflair 475m": "Mega Gallade",
     "1-15 megasflair 531m": "Mega Audino",
     "1-16 megasflair 719m": "Mega Diancie",
-    "1-17 megasflair ub1": "UB-01",
-    "1-18 megasflair ub2s": "UB-02 Absorption",
-    "1-19 megasflair ub2m": "UB-02 Beauty",
+    "1-17 megasflair ub1": "UB-01 Symbiont - Nihilego",
+    "1-18 megasflair ub2s": "UB-02 Absorption - Buzzwole",
+    "1-19 megasflair ub2m": "UB-02 Beauty - Pheromosa",
+    "1-20 megasflair ub3": "UB-03 Lighting - Xurkitree",
+    "1-21 megasflair ub4s": "UB-04 Blaster - Celesteela",
+    "1-22 megasflair ub4m": "UB-04 Blade - Kartana",
+    "1-23 megasflair ub5": "UB-05 Glutton - Guzzlord",
+    "1-24 megasflair ub6": "Necrozma",
     "0-0 badgesflair badge1": "Brock Badge",
     "0-1 badgesflair badge2": "Misty Badge",
     "0-2 badgesflair badge3": "Lt. Surge Badge",
