@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-27T23:52:13-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-28T00:20:59-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -931,7 +931,7 @@ flair.names = {
     "2-29 formsflair 746o": "Wishiwashi School Form",
     "2-30 formsflair 774a": "Minior Green",
     "2-31 formsflair 774b": "Minior Sky",
-    "2-32 formsflair 774c": "Minior Navy",
+    "2-32 formsflair 774c": "Minior Indigo",
     "3-0 formsflair 774d": "Minior Violet",
     "3-1 formsflair 774e": "Minior Red",
     "3-2 formsflair 774f": "Minior Orange",
