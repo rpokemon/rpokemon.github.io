@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-27T17:04:59-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-11-27T17:08:48-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -943,6 +943,7 @@ flair.names = {
     "4-4 formsflair a28": "Alolan Sandslash",
     "4-5 formsflair a37": "Alolan Vulpix",
     "4-6 formsflair a38": "Alolan Ninetales",
+    "4-7 formsflair a50": "Alolan Diglett",
     "4-8 formsflair a51": "Alolan Dugtrio",
     "4-9 formsflair a52": "Alolan Meowth",
     "4-10 formsflair a53": "Alolan Persian",
