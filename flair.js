@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-12-21T02:04:07-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-12-21T02:13:37-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -1031,6 +1031,8 @@ flair.names = {
     "0-6 badgesflair badge7": "Blaine Badge",
     "0-7 badgesflair badge8": "Giovanni/Blue Badge",
     "0-16 badgesflair badge17": "Team Rocket Emblem",
+    "1-23 badgesflair badge57": "Normalium-Z",
+    "1-24 badgesflair badge58": "Fightinium-Z",
     "1-25 badgesflair badge59": "Waterium-Z",
     "1-26 badgesflair badge60": "Firium-Z",
     "1-27 badgesflair badge61": "Grassium-Z",
