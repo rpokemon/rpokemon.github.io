@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-11-28T00:20:59-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-12-21T02:04:07-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -1030,4 +1030,23 @@ flair.names = {
     "0-5 badgesflair badge6": "Sabrina Badge",
     "0-6 badgesflair badge7": "Blaine Badge",
     "0-7 badgesflair badge8": "Giovanni/Blue Badge",
+    "0-16 badgesflair badge17": "Team Rocket Emblem",
+    "1-25 badgesflair badge59": "Waterium-Z",
+    "1-26 badgesflair badge60": "Firium-Z",
+    "1-27 badgesflair badge61": "Grassium-Z",
+    "1-28 badgesflair badge62": "Rockium-Z",
+    "1-29 badgesflair badge63": "Electrium-Z",
+    "1-30 badgesflair badge64": "Ghostium-Z",
+    "1-31 badgesflair badge65": "Darkinium-Z",
+    "1-32 badgesflair badge66": "Fairium-Z",
+    "2-0 badgesflair badge67": "Groundium-Z",
+    "2-1 badgesflair badge68": "Dragonium-Z",
+    "2-2 badgesflair badge69": "Buginium-Z",
+    "2-3 badgesflair badge70": "Flyinium-Z",
+    "2-4 badgesflair badge71": "Steelium-Z",
+    "2-5 badgesflair badge72": "Icium-Z",
+    "2-6 badgesflair badge73": "Poisonium-Z",
+    "2-7 badgesflair badge74": "Psychium-Z",
+    "2-8 badgesflair badge75": "Team Skull Emblem",
+    "2-9 badgesflair badge76": "Aether Foundation Emblem",
 };
