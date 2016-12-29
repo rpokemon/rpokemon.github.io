@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-12-21T02:13:37-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-12-28T22:15:07-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -452,8 +452,8 @@ flair.names = {
     "0-22 sinnohflair 409": "Rampardos",
     "0-23 sinnohflair 410": "Shieldon",
     "0-24 sinnohflair 411": "Bastiodon",
-    "0-25 sinnohflair 412": "Burmy",
-    "0-26 sinnohflair 413": "Wormadam",
+    "0-25 sinnohflair 412": "Burmy Plant Cloak",
+    "0-26 sinnohflair 413": "Wormadam PLant Cloak",
     "0-27 sinnohflair 414": "Mothim",
     "0-28 sinnohflair 415": "Combee",
     "0-29 sinnohflair 416": "Vespiquen",
@@ -936,6 +936,11 @@ flair.names = {
     "3-1 formsflair 774e": "Minior Red",
     "3-2 formsflair 774f": "Minior Orange",
     "3-3 formsflair 774g": "Minior Yellow",
+    "3-4 formsflair 793o": "Magearna Original Form",
+    "3-5 formsflair 412a": "Burmy Trash Cloak",
+    "3-6 formsflair 412b": "Burmy Sandy Cloak",
+    "3-7 formsflair 413a": "Wormadam Trash Cloak",
+    "3-8 formsflair 413b": "Wormadam Sandy Cloak",
     "4-0 formsflair a19": "Alolan Rattata",
     "4-1 formsflair a20": "Alolan Raticate",
     "4-2 formsflair a26": "Alolan Raichu",
@@ -947,6 +952,9 @@ flair.names = {
     "4-8 formsflair a51": "Alolan Dugtrio",
     "4-9 formsflair a52": "Alolan Meowth",
     "4-10 formsflair a53": "Alolan Persian",
+    "4-11 formsflair a74": "Alolan Geodude",
+    "4-12 formsflair a75": "Alolan Graveler",
+    "4-13 formsflair a76": "Alolan Golem",
     "4-14 formsflair a88": "Alolan Grimer",
     "4-15 formsflair a89": "Alolan Muk",
     "4-16 formsflair a103": "Alolan Exeggutor",
