@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2016-12-28T22:15:07-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2016-12-28T23:44:52-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -833,7 +833,15 @@ flair.names = {
     "2-2 alolaflair 790": "Cosmoem",
     "2-3 alolaflair 791": "Solgaleo",
     "2-4 alolaflair 792": "Lunala",
-    "2-5 alolaflair 793": "Magearna",
+    "2-5 alolaflair 793": "UB-01 Symbiont - Nihilego",
+    "2-6 alolaflair 794": "UB-02 Absorption - Buzzwole",
+    "2-7 alolaflair 795": "UB-02 Beauty - Pheromosa",
+    "2-8 alolaflair 796": "UB-03 Lighting - Xurkitree",
+    "2-9 alolaflair 797": "UB-04 Blaster - Celesteela",
+    "2-10 alolaflair 798": "UB-04 Blade - Kartana",
+    "2-11 alolaflair 799": "UB-05 Glutton - Guzzlord",
+    "2-12 alolaflair 800": "Necrozma",
+    "2-13 alolaflair 801": "Magearna",
 /* [ETC/FORMS] */
     "0-1 formsflair 130s": "Shiny Gyarados",
     "0-2 formsflair 386a": "Deoxys Attack",
@@ -936,7 +944,6 @@ flair.names = {
     "3-1 formsflair 774e": "Minior Red",
     "3-2 formsflair 774f": "Minior Orange",
     "3-3 formsflair 774g": "Minior Yellow",
-    "3-4 formsflair 793o": "Magearna Original Form",
     "3-5 formsflair 412a": "Burmy Trash Cloak",
     "3-6 formsflair 412b": "Burmy Sandy Cloak",
     "3-7 formsflair 413a": "Wormadam Trash Cloak",
@@ -1022,14 +1029,6 @@ flair.names = {
     "1-14 megasflair 475m": "Mega Gallade",
     "1-15 megasflair 531m": "Mega Audino",
     "1-16 megasflair 719m": "Mega Diancie",
-    "1-17 megasflair ub1": "UB-01 Symbiont - Nihilego",
-    "1-18 megasflair ub2s": "UB-02 Absorption - Buzzwole",
-    "1-19 megasflair ub2m": "UB-02 Beauty - Pheromosa",
-    "1-20 megasflair ub3": "UB-03 Lighting - Xurkitree",
-    "1-21 megasflair ub4s": "UB-04 Blaster - Celesteela",
-    "1-22 megasflair ub4m": "UB-04 Blade - Kartana",
-    "1-23 megasflair ub5": "UB-05 Glutton - Guzzlord",
-    "1-24 megasflair ub6": "Necrozma",
     "0-0 badgesflair badge1": "Brock Badge",
     "0-1 badgesflair badge2": "Misty Badge",
     "0-2 badgesflair badge3": "Lt. Surge Badge",
