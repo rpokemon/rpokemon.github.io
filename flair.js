@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-01-17T22:54:23-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-01-17T23:23:22-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -40,7 +40,7 @@ flair.load__by_id = function() {
 };
 flair.by_id = {};
 flair.defaults = {
-    "kwwxis": "boo-dat-dlh-guy"
+    "kwwxis": "testflair"
 };
 flair.names = {
 /* [STANDARD] */
