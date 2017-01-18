@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-01-17T22:53:14-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-01-17T22:54:23-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -37,11 +37,11 @@ flair.load__by_id = function() {
             }
         }
     }
-}
-flair.by_id = {}
+};
+flair.by_id = {};
 flair.defaults = {
     "kwwxis": "boo-dat-dlh-guy"
-}
+};
 flair.names = {
 /* [STANDARD] */
     "0-0 kantoflair 1": "Bulbasaur",
