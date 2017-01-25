@@ -3,7 +3,7 @@ flair.sheet_filter = null;
 flair.sheet_filter_change = false;
 flair.typing_timeout = null;
 
-flair.subreddits = ['Pokemon', 'Stunfisk', 'TruePokemon', 'Dugtrio'];
+flair.subreddits = ['Pokemon', 'Stunfisk', 'TruePokemon'];
 
 flair.updateRegionFilter = function(sheet_name) {
     if (sheet_name == 'ALL') {
