@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-01-24T22:52:06-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-01-26T18:40:30-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -407,6 +407,8 @@ flair.defaults = {
     "FezAndWand": "bankflair",
     "TriumphantBass": "bankflair",
     "BoneDryLXIX": "bankflair",
+    "RobbieNewton": "bankflair",
+    "SwitchbladeExplosion": "bankflair",
 };
 flair.names = {
 /* [STANDARD] */
