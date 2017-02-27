@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-17T01:57:47-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-02-26T21:40:44-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -64,7 +64,6 @@ flair.defaults = {
     "Dont_be_offended_but": "bankflair",
     "AquaAura_": "bankflair",
     "Clasitav": "bankflair",
-    "Jovanang": "bankflair",
     "silverfingold": "bankflair",
     "MadDog1751": "bankflair",
     "supercalu": "bankflair",
@@ -434,6 +433,8 @@ flair.defaults = {
     "TheGallagador": "tapubulu-medal",
     "dude071297": "tapubulu-medal",
     "Snaptah": "tapubulu-medal",
+    "KuronixFirhyx": "tapubulu-medal",
+    "Jovanang": "tapubulu-medal",
 };
 flair.names = {
 /* [STANDARD] */
