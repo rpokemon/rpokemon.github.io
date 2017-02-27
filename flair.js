@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-26T22:39:30-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-02-26T22:48:10-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -365,7 +365,6 @@ flair.defaults = {
     "OmegaScorpio": "bankflair",
     "-TheFoolishJester": "bankflair",
     "Garmega": "bankflair",
-    "Lucas_One": "pikacup",
     "prs33": "bankflair",
     "CheesyChazzy": "bankflair",
     "Fabian_XYZ": "bankflair",
@@ -459,6 +458,7 @@ flair.defaults = {
     "Crazydian": "pikacup",
     "Pokedude14": "pikacup",
     "Draycen": "pikacup",
+    "Lucas_One": "pikacup",
     "SilverTris79": "pikacup",
     "MegaHyperDash": "pikacup",
     "TheDominantSoul": "pikacup",
