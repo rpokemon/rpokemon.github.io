@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-03-01T21:06:11-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-03-02T01:05:37-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -445,6 +445,13 @@ flair.defaults = {
     "Zapdos678": "tapubulu-medal",
     "hiabara": "tapubulu-medal",
     "drewlase": "tapubulu-medal",
+    "Tributyrin": "tapubulu-medal",
+    "Rafat9": "tapubulu-medal",
+    "Ackrylic": "tapubulu-medal",
+    "kickwitkowskiass": "tapubulu-medal",
+    "AwsumAndy": "tapubulu-medal",
+    "dreams_of_mareep": "tapubulu-medal",
+    "Tendedtadpole2": "tapubulu-medal",
     "ninmai700": "pikacup",
     "Shadowstar70712": "pikacup",
     "TrueLexatom": "pikacup",
