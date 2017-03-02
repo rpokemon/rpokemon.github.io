@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-02-26T22:48:10-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-03-01T21:06:11-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -26,6 +26,13 @@ flair.load__by_id = function() {
                 orig_id = orig_id.substring(0, orig_id.length - 1);
             }
             
+            var flair_class = '';
+            for (var i = 0; i < data.length; i++) {
+                flair_class += 'flair-' + data[i] + ' ';
+            }
+            
+            flair_class = flair_class.slice(0, -1);
+            
             flair.by_id[data[2]] = {
                 key: key,
                 spritepos: data[0],
@@ -33,7 +40,7 @@ flair.load__by_id = function() {
                 poke_id: data[2],
                 orig_id: orig_id,
                 poke_name: flair.names[key],
-                flair_class: ' flair-'+data[0] + ' flair-'+data[1] + ' flair-'+data[2]
+                flair_class: flair_class,
             }
         }
     }
@@ -414,7 +421,7 @@ flair.defaults = {
     "Laradox": "tapubulu-medal",
     "Alinzko": "tapubulu-medal",
     "Bakatora34": "tapubulu-medal",
-    "Healthy_Orange_Juice": "tapubulu-medal",
+    "Healthy_Orange_Juice": "tapufini-medal",
     "NoNameTheHarpy": "tapubulu-medal",
     "jAquaD": "tapubulu-medal",
     "alaserdolphin": "tapubulu-medal",
@@ -434,6 +441,10 @@ flair.defaults = {
     "Snaptah": "tapubulu-medal",
     "KuronixFirhyx": "tapubulu-medal",
     "Jovanang": "tapubulu-medal",
+    "Draexzhan": "tapubulu-medal",
+    "Zapdos678": "tapubulu-medal",
+    "hiabara": "tapubulu-medal",
+    "drewlase": "tapubulu-medal",
     "ninmai700": "pikacup",
     "Shadowstar70712": "pikacup",
     "TrueLexatom": "pikacup",
@@ -468,6 +479,16 @@ flair.defaults = {
     "Menegoth": "pikacup",
     "Icalasari": "pikacup",
     "AntiFairySquad": "pikacup",
+    "JustBanter_": "tapufini-medal",
+    "Sisiwakanamaru": "tapufini-medal",
+    "lawliet89": "tapufini-medal",
+    "lucariojr": "tapufini-medal",
+    "bahilon": "tapufini-medal",
+    "phasmy": "tapufini-medal",
+    "Mercerai": "tapufini-medal",
+    "KDragon5": "tapufini-medal",
+    "ApexGS": "tapufini-medal",
+    "DSDark11": "tapufini-medal",
 };
 flair.names = {
 /* [STANDARD] */
@@ -1488,4 +1509,5 @@ flair.names = {
     "2-7 badgesflair badge74": "Psychium-Z",
     "2-8 badgesflair badge75": "Team Skull Emblem",
     "2-9 badgesflair badge76": "Aether Foundation Emblem",
+/* [ETC/TRAINERS] */
 };
