@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-03-02T01:05:37-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-03-04T20:44:22-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -496,6 +496,9 @@ flair.defaults = {
     "KDragon5": "tapufini-medal",
     "ApexGS": "tapufini-medal",
     "DSDark11": "tapufini-medal",
+    "lupuscantus": "tapufini-medal",
+    "ApatheticRadiance": "tapufini-medal",
+    "iGotUrCrayoIa": "tapufini-medal",
 };
 flair.names = {
 /* [STANDARD] */
