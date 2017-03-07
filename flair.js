@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-03-04T20:44:22-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-03-07T14:26:10-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -428,7 +428,6 @@ flair.defaults = {
     "AtomicWalrus": "tapubulu-medal",
     "UW_Unknown_Warrior": "tapubulu-medal",
     "Snubbybill": "tapubulu-medal",
-    "Pokemoncutie": "tapubulu-medal",
     "pm_me_ur_river_otter": "tapubulu-medal",
     "Captain_Blue": "tapubulu-medal",
     "Buntalufigus88": "tapubulu-medal",
@@ -499,6 +498,10 @@ flair.defaults = {
     "lupuscantus": "tapufini-medal",
     "ApatheticRadiance": "tapufini-medal",
     "iGotUrCrayoIa": "tapufini-medal",
+    "multisofteis": "tapufini-medal",
+    "Kroctopus": "tapufini-medal",
+    "Pokemoncutie": "tapufini-medal",
+    "tehvik": "tapufini-medal",
 };
 flair.names = {
 /* [STANDARD] */
