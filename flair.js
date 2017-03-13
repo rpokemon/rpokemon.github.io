@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-03-07T14:26:10-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2017-03-13T10:08:57-0700 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -502,6 +502,7 @@ flair.defaults = {
     "Kroctopus": "tapufini-medal",
     "Pokemoncutie": "tapufini-medal",
     "tehvik": "tapufini-medal",
+    "Krisos35": "tapufini-medal",
 };
 flair.names = {
 /* [STANDARD] */
