@@ -111,7 +111,7 @@ function get_potw() {
                 for (var i = 0; i < obj["previous_evolutions"].length; i++) {
                     evo_obj = pokemon_list[obj["previous_evolutions"][i]]
                     potw_output += potw_pokemon_template_body.format(
-                        pokemon,
+                        obj["previous_evolutions"][i],
                         evo_obj["name"]["english"],
                         evo_obj["name"]["kana"],
                         evo_obj["name"]["japanese"],
