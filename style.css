@@ -212,7 +212,7 @@ button:active, input[type=submit]:active {
 /* POTW OUTPUT
 --------------------------------------------------------------------------------*/
 
-textarea#potw_output {
+#potw_output {
     width: 100%;
     resize: none;
     background-color: #FFF;
