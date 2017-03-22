@@ -70,8 +70,16 @@ evolved_pokemon = []
 
 function get_potw() {
     for (var pokemon in pokemon_list) {
+        evolved_pokemon.push(pokemon)
+    }
+    for (var pokemon in pokemon_list) {
         if (pokemon_list[pokemon]["previous_evolutions"]) {
-            evolved_pokemon.push(pokemon)
+            for (var i = 0; i < pokemon_list[pokemon]["previous_evolutions"].length; i++) {
+                index = evolved_pokemon.indexOf(pokemon_list[pokemon]["previous_evolutions"][i])
+                if (index > -1) {
+                    evolved_pokemon.splice(index, 1);
+                }
+            }
         }
     }
     evolved_pokemon.sort(function () {
