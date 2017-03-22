@@ -208,3 +208,15 @@ button:active, input[type=submit]:active {
 .flair {
     background-color: transparent
 }
+
+/* POTW OUTPUT
+--------------------------------------------------------------------------------*/
+
+textarea#potw_output {
+    width: 100%;
+    resize: none;
+    background-color: #FFF;
+    border: 1px solid #c8ccd0;
+    border-radius: 3px;
+    min-height: 600px;
+}

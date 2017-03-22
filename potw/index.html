@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokémon Flair Selector</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:300italic,400italic,600italic,700italic,400,300,600,700"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all">
+    <!-- JavaScript -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="potw.js"></script>
+</head>
+
+<body>
+    <noscript>JavaScript is required to run this page.</noscript>
+    <div class="wrapper">
+        <div id="flair-selection" class="center">
+            <div class="cf">
+                <div class="fl">
+                    <div id="potw-selection-name">Pokemon Name:</div>
+                    <input id="potw-selection-text" type="text" placeholder="Enter the pokemon's name" />
+                    <div class="spacer">
+                        <button onclick="get_potw()" id="flair-select-submit">Generate POTW Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <textarea id="potw_output" type="textarea"></textarea>
+        
+        <h3 class="center"><a href="http://www.strawpoll.me/"><br>REMEMBER TO CREATE THE STRAWPOLL WITH THE SPEFICIED POKEMON!<a></h3>
+    </div>
+</body>
+
+</html>
