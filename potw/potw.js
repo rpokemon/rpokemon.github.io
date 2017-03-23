@@ -109,7 +109,7 @@ function get_potw() {
                 obj["name"]["japanese"],
                 obj["classification"],
                 obj["dex_entry"][0],
-                obj["dex_entry"][1],
+                obj["dex_entry"][1]
             )
 
             if (obj["reddit_draws_url"]) {
@@ -130,7 +130,7 @@ function get_potw() {
                         evo_obj["name"]["japanese"],
                         evo_obj["classification"],
                         evo_obj["dex_entry"][0],
-                        evo_obj["dex_entry"][1],
+                        evo_obj["dex_entry"][1]
                     )
 
                     if (evo_obj["reddit_draws_url"]) {
