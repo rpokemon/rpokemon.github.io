@@ -1,4 +1,4 @@
-{
+var pokemon_list = {
     "001": {
         "classification": "Seed Pok\u00e9mon",
         "dex_entry": [
