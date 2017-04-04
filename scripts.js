@@ -122,10 +122,38 @@ flair.sendChoice = function() {
 flair.selectChoice = function(poke_id, key) {
     var el = document.querySelector('.flair-choice[data-id="'+poke_id+'"]');
     
+    console.log(el)
+    
     if (!el) {
         return;
     }
     
+    // If trainerflair disable subreddit selection checkbox
+    if (el.getAttribute('class').includes("trainerflair")) {
+        for (i = 1; i < document.getElementsByClassName("sr-choice").length; i++){
+
+            // If checkbox was selected save status
+            if (document.getElementsByClassName("sr-choice")[i].firstChild.checked){
+                document.getElementsByClassName("sr-choice")[i].firstChild.waschecked = true;
+            }
+
+            document.getElementsByClassName("sr-choice")[i].firstChild.checked = false;
+            document.getElementsByClassName("sr-choice")[i].firstChild.disabled = true;
+        }
+    }
+
+    else {
+        for (i = 1; i < document.getElementsByClassName("sr-choice").length; i++){
+
+            if (document.getElementsByClassName("sr-choice")[i].firstChild.waschecked) {
+                document.getElementsByClassName("sr-choice")[i].firstChild.checked = true;
+                document.getElementsByClassName("sr-choice")[i].firstChild.waschecked = false;
+            }
+
+            document.getElementsByClassName("sr-choice")[i].firstChild.disabled = false;
+        }
+    }
+
     n.removeClass(document.querySelectorAll('.flair-choice'), 'selected');
     n.addClass(el, 'selected');
     
