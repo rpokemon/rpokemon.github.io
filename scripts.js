@@ -97,12 +97,21 @@ flair.sendChoice = function() {
     }
     
     var o = document.querySelectorAll('.sr-choice ');
-    for (var i = 0, len = o.length; i < len; i++) {
-        var sr_name = o[i].getAttribute('data-name');
-        if (o[i].querySelector('input[type=checkbox]').checked) {
-            subreddits += sr_name + ' ';
+
+
+    if (flair.current_choice.includes("trainerflair")) { // If trainer flair only apply to /r/Pokemon
+        subreddits += "pokemon ";
+    }
+
+    else {
+        for (var i = 0, len = o.length; i < len; i++) {
+            var sr_name = o[i].getAttribute('data-name');
+            if (o[i].querySelector('input[type=checkbox]').checked) {
+                subreddits += sr_name + ' ';
+            }
         }
     }
+
     
     window.open('http://www.reddit.com/message/compose/?to=PokemonFlairBot&subject='+
         flair.current_choice+
