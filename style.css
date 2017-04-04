@@ -200,7 +200,8 @@ button:active, input[type=submit]:active {
     content: '?';
 }
 
-.flair:hover, .flair.selected {
+.flair:hover, .flair.selected,
+.flair.flair-tf:hover, .flair.flair-tf.selected {
     background-color: #3498db;
     border-radius: 2px;
 }
