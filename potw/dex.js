@@ -2042,8 +2042,7 @@ var pokemon_list = {
             "kana": "\u30b5\u30ef\u30e0\u30e9\u30fc"
         },
         "previous_evolutions": [
-            "236",
-            "107"
+            "236"
         ],
         "reddit_draws_url": [
             "http://imgur.com/bz0WoKR",
@@ -2570,10 +2569,7 @@ var pokemon_list = {
             "kana": "\u30b7\u30e3\u30ef\u30fc\u30ba"
         },
         "previous_evolutions": [
-            "133",
-            "470",
-            "471",
-            "135"
+            "133"
         ],
         "reddit_draws_url": [
             "http://imgur.com/NZSlapS",
@@ -2593,9 +2589,7 @@ var pokemon_list = {
             "kana": "\u30b5\u30f3\u30c0\u30fc\u30b9"
         },
         "previous_evolutions": [
-            "133",
-            "470",
-            "471"
+            "133"
         ],
         "reddit_draws_url": [
             "http://imgur.com/1B4Di81",
@@ -2615,11 +2609,7 @@ var pokemon_list = {
             "kana": "\u30d6\u30fc\u30b9\u30bf\u30fc"
         },
         "previous_evolutions": [
-            "133",
-            "470",
-            "471",
-            "135",
-            "134"
+            "133"
         ],
         "reddit_draws_url": [
             "http://imgur.com/m0p7RsP",
@@ -3498,8 +3488,7 @@ var pokemon_list = {
         },
         "previous_evolutions": [
             "043",
-            "044",
-            "045"
+            "044"
         ],
         "reddit_draws_url": [
             "http://imgur.com/Qi0lyqK",
@@ -3581,8 +3570,7 @@ var pokemon_list = {
         },
         "previous_evolutions": [
             "060",
-            "061",
-            "062"
+            "061"
         ],
         "reddit_draws_url": [
             "http://imgur.com/YCBpjfr",
@@ -3773,12 +3761,7 @@ var pokemon_list = {
             "kana": "\u30a8\u30fc\u30d5\u30a3"
         },
         "previous_evolutions": [
-            "133",
-            "470",
-            "471",
-            "135",
-            "134",
-            "136"
+            "133"
         ],
         "reddit_draws_url": [
             "http://imgur.com/k8ncLN7",
@@ -3799,12 +3782,6 @@ var pokemon_list = {
         },
         "previous_evolutions": [
             "133",
-            "470",
-            "471",
-            "135",
-            "134",
-            "136",
-            "196"
         ],
         "reddit_draws_url": [
             "http://imgur.com/9NtEIG0",
@@ -3842,8 +3819,7 @@ var pokemon_list = {
             "kana": "\u30e4\u30c9\u30ad\u30f3\u30b0"
         },
         "previous_evolutions": [
-            "079",
-            "080"
+            "079"
         ],
         "reddit_draws_url": [
             "http://imgur.com/KYO2QAK",
@@ -4558,9 +4534,7 @@ var pokemon_list = {
             "kana": "\u30ab\u30dd\u30a8\u30e9\u30fc"
         },
         "previous_evolutions": [
-            "236",
-            "107",
-            "106"
+            "236"
         ],
         "reddit_draws_url": [
             "http://imgur.com/pr5J5BO",
@@ -5152,9 +5126,7 @@ var pokemon_list = {
             "kana": "\u30de\u30e6\u30eb\u30c9"
         },
         "previous_evolutions": [
-            "265",
-            "266",
-            "267"
+            "265"
         ],
         "reddit_draws_url": [
             "http://imgur.com/bv6mRSk",
@@ -5175,8 +5147,6 @@ var pokemon_list = {
         },
         "previous_evolutions": [
             "265",
-            "266",
-            "267",
             "268"
         ],
         "reddit_draws_url": [
@@ -5620,8 +5590,7 @@ var pokemon_list = {
             "kana": "\u30cc\u30b1\u30cb\u30f3"
         },
         "previous_evolutions": [
-            "290",
-            "291"
+            "290"
         ],
         "reddit_draws_url": [
             "http://imgur.com/uAF7nxG",
@@ -7059,8 +7028,7 @@ var pokemon_list = {
             "kana": "\u30b5\u30af\u30e9\u30d3\u30b9"
         },
         "previous_evolutions": [
-            "366",
-            "367"
+            "366"
         ],
         "reddit_draws_url": [
             "http://imgur.com/SgVkvqK",
@@ -7938,8 +7906,7 @@ var pokemon_list = {
             "kana": "\u30ac\u30fc\u30e1\u30a4\u30eb"
         },
         "previous_evolutions": [
-            "412",
-            "413"
+            "412"
         ],
         "reddit_draws_url": [
             "http://imgur.com/TcFg1WB",
@@ -9033,8 +9000,7 @@ var pokemon_list = {
             "kana": "\u30b0\u30ec\u30a4\u30b7\u30a2"
         },
         "previous_evolutions": [
-            "133",
-            "470"
+            "133"
         ],
         "reddit_draws_url": [
             "http://imgur.com/JWEhFwo",
@@ -9118,7 +9084,6 @@ var pokemon_list = {
         "previous_evolutions": [
             "280",
             "281",
-            "282"
         ],
         "reddit_draws_url": [
             "http://imgur.com/ZII43nz",
@@ -9179,8 +9144,7 @@ var pokemon_list = {
             "kana": "\u30e6\u30ad\u30e1\u30ce\u30b3"
         },
         "previous_evolutions": [
-            "361",
-            "362"
+            "361"
         ],
         "reddit_draws_url": [
             "http://imgur.com/XRCWo26",
@@ -14949,8 +14913,7 @@ var pokemon_list = {
         },
         "previous_evolutions": [
             "789",
-            "790",
-            "791"
+            "790"
         ],
         "reddit_draws_url": null
     },
