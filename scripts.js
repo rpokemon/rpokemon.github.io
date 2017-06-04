@@ -101,9 +101,7 @@ flair.sendChoice = function() {
 
     if (flair.current_choice.indexOf("trainerflair") >= 0) { // If trainer flair only apply to /r/Pokemon
         subreddits += "pokemon ";
-    }
-
-    else {
+    } else {
         for (var i = 0, len = o.length; i < len; i++) {
             var sr_name = o[i].getAttribute('data-name');
             if (o[i].querySelector('input[type=checkbox]').checked) {
@@ -129,28 +127,29 @@ flair.selectChoice = function(poke_id, key) {
     }
     
     // If trainerflair disable subreddit selection checkbox
+    var sr_choices = document.getElementsByClassName("sr-choice");
     if (el.getAttribute('class').indexOf("trainerflair") >= 0) {
-        for (i = 1; i < document.getElementsByClassName("sr-choice").length; i++){
+        for (var i = 1; i < sr_choices.length; i++){
+            var input_el = sr_choices[i].firstChild;
 
             // If checkbox was selected save status
-            if (document.getElementsByClassName("sr-choice")[i].firstChild.checked){
-                document.getElementsByClassName("sr-choice")[i].firstChild.waschecked = true;
+            if (input_el.checked){
+                input_el.waschecked = true;
             }
 
-            document.getElementsByClassName("sr-choice")[i].firstChild.checked = false;
-            document.getElementsByClassName("sr-choice")[i].firstChild.disabled = true;
+            input_el.checked = false;
+            input_el.disabled = true;
         }
-    }
+    } else {
+        for (var i = 1; i < sr_choices.length; i++){
+            var input_el = sr_choices[i].firstChild;
 
-    else {
-        for (i = 1; i < document.getElementsByClassName("sr-choice").length; i++){
-
-            if (document.getElementsByClassName("sr-choice")[i].firstChild.waschecked) {
-                document.getElementsByClassName("sr-choice")[i].firstChild.checked = true;
-                document.getElementsByClassName("sr-choice")[i].firstChild.waschecked = false;
+            if (input_el.waschecked) {
+                input_el.checked = true;
+                input_el.waschecked = false;
             }
 
-            document.getElementsByClassName("sr-choice")[i].firstChild.disabled = false;
+            input_el.disabled = false;
         }
     }
 
