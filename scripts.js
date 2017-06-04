@@ -99,7 +99,7 @@ flair.sendChoice = function() {
     var o = document.querySelectorAll('.sr-choice ');
 
 
-    if (flair.current_choice.includes("trainerflair")) { // If trainer flair only apply to /r/Pokemon
+    if (flair.current_choice.indexOf("trainerflair") >= 0) { // If trainer flair only apply to /r/Pokemon
         subreddits += "pokemon ";
     }
 
@@ -129,7 +129,7 @@ flair.selectChoice = function(poke_id, key) {
     }
     
     // If trainerflair disable subreddit selection checkbox
-    if (el.getAttribute('class').includes("trainerflair")) {
+    if (el.getAttribute('class').indexOf("trainerflair") >= 0) {
         for (i = 1; i < document.getElementsByClassName("sr-choice").length; i++){
 
             // If checkbox was selected save status
