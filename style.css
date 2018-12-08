@@ -183,6 +183,12 @@ button:active, input[type=submit]:active {
     cursor: pointer;
     margin: 6px 2px !important;
     position: relative;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-pixelated;
+    image-rendering: pixelated;
+
 }
 
 .flair:not([class*='flair-']) {
