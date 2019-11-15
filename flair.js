@@ -1,4 +1,4 @@
-/* FLAIR MASTER CONFIG | auto-generated at 2017-12-01T11:35:10-0800 (ISO-8601) */ 
+/* FLAIR MASTER CONFIG | auto-generated at 2019-11-15T01:37:42-0800 (ISO-8601) */ 
 flair.load__by_id = function() {
     for (var key in flair.names) {
         if (flair.names.hasOwnProperty(key)) {
@@ -1607,6 +1607,9 @@ flair.names = {
     "2-16 alolaflair 804": "Naganadel",
     "2-17 alolaflair 805": "UB-07 Assembly - Stakataka",
     "2-18 alolaflair 806": "UB-08 Burst - Blacephalon",
+    "2-19 alolaflair 807": "Zeraora",
+    "2-20 alolaflair 808": "Meltan",
+    "2-21 alolaflair 809": "Melmetal",
 /* [ETC/FORMS] */
     "0-1 formsflair 130s": "Shiny Gyarados",
     "0-2 formsflair 386a": "Deoxys Attack",
